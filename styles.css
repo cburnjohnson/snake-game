@@ -7,6 +7,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #2cb98d;
+    color: #eccb10;
+}
+
 h1.title {
     font-family: 'Fredoka One', cursive;
     font-size: 5rem;
@@ -35,10 +40,12 @@ form h2 {
 
 form label {
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 form input[type='radio'] {
     cursor: pointer;
+    margin-right: 0.5em;
 }
 
 form button {
@@ -48,6 +55,8 @@ form button {
     text-transform: uppercase;
     font-size: 1.5rem;
     border-radius: 8px;
+    color: #2cb98d;
+    background-color: #eccb10;
 }
 
 .form-control {
