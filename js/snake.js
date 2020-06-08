@@ -1,6 +1,24 @@
 import { getInputDirection } from './input.js';
 
-export const SNAKE_SPEED = 5;
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('difficulty');
+
+export let SNAKE_SPEED;
+
+switch (myParam) {
+    case 'easy':
+        SNAKE_SPEED = 5;
+        break;
+    case 'normal':
+        SNAKE_SPEED = 10;
+        break;
+    case 'hard':
+        SNAKE_SPEED = 15;
+        break;
+    default:
+        SNAKE_SPEED = 5;
+        break;
+}
 
 const snakeBody = [{ x: 11, y: 11 }];
 let newSegments = 0;
