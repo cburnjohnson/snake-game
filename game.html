@@ -33,10 +33,20 @@
                 background-color: #a5825a;
                 border: 0.25vmin solid black;
             }
+
+            h1#score-header {
+                position: absolute;
+                top: 0;
+                color: #fff;
+                font-family: monospace;
+                text-transform: uppercase;
+                font-size: 4rem;
+            }
         </style>
         <script src="./js/game.js" defer type="module"></script>
     </head>
     <body>
+        <h1 id="score-header">Score:<span id="score">0</span></h1>
         <div id="game-board"></div>
     </body>
 </html>
