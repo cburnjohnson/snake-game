@@ -10,10 +10,10 @@ switch (myParam) {
         SNAKE_SPEED = 5;
         break;
     case 'normal':
-        SNAKE_SPEED = 10;
+        SNAKE_SPEED = 8;
         break;
     case 'hard':
-        SNAKE_SPEED = 15;
+        SNAKE_SPEED = 12;
         break;
     default:
         SNAKE_SPEED = 5;
